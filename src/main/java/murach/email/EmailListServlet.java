@@ -6,11 +6,6 @@ import jakarta.servlet.http.*;
 
 import murach.business.User;
 import murach.business.Survey;
-//import murach.data.UserDB;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class EmailListServlet extends HttpServlet {
     @Override
@@ -40,7 +35,7 @@ public class EmailListServlet extends HttpServlet {
 
             User user = new User(firstName, lastName, email, dob);
             Survey survey = new Survey(referralSource, wantAnnouncements, wantOffer, contactVia);
-            // UserDB.insert(user);
+
             request.setAttribute("user", user);
             request.setAttribute("survey", survey); // lưu vào body của request
             url = "/thanks.jsp";

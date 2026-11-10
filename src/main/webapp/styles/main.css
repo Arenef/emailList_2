@@ -6,23 +6,24 @@ body {
 }
 
 h1 {
-    color: teal;
+    color: blue;
 }
 
 h2 {
-    color: teal;
+    color: blue;
 }
 
 label {
     float: left;
-    width: 20em;
+    width: 10em;
     margin-bottom: 0.5em;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="date"] {
-    width: 10em;
+    width: 13em;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 }

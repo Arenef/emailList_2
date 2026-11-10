@@ -1,6 +1,6 @@
 package murach.business;
+
 import java.io.Serializable;
-import java.util.Date;
 
 public class Survey implements Serializable {
     private String referralSource;
@@ -8,26 +8,26 @@ public class Survey implements Serializable {
     private boolean offer;
     private String contactVia;
 
-    public Survey (String referralSource, boolean announcements, boolean offer, String contactVia) {
+    public Survey(String referralSource, boolean announcements, boolean offer, String contactVia) {
         this.referralSource = referralSource;
         this.announcements = announcements;
         this.offer = offer;
         this.contactVia = contactVia;
     }
 
-    public String getReferralSource () {
+    public String getReferralSource() {
         return this.referralSource;
     }
 
-    public void setReferralSource (String referralSource) {
+    public void setReferralSource(String referralSource) {
         this.referralSource = referralSource;
     }
 
-    public boolean getAnnouncements () {
+    public boolean getAnnouncements() {
         return this.announcements;
     }
 
-    public void setAnnouncements (boolean announcements) {
+    public void setAnnouncements(boolean announcements) {
         this.announcements = announcements;
     }
 
@@ -39,11 +39,11 @@ public class Survey implements Serializable {
         this.offer = offer;
     }
 
-    public String getContactVia () {
+    public String getContactVia() {
         return this.contactVia;
     }
 
-    public void setContactVia (String contactVia) {
+    public void setContactVia(String contactVia) {
         this.contactVia = contactVia;
     }
 }

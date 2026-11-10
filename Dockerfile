@@ -1,14 +1,11 @@
-# Stage 1: Build file WAR bằng Maven
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-# Stage 2: Chạy trên Tomcat 10 (hỗ trợ Jakarta EE 10)
 FROM tomcat:10.1-jdk21-temurin
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
-# Copy file war sau khi build vào làm ứng dụng mặc định (ROOT.war)
 COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080

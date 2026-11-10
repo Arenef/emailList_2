@@ -1,20 +1,21 @@
 package murach.business;
+
 import java.io.Serializable;
 
-public class User implements Serializable{
+public class User implements Serializable {
     private String firstName;
     private String lastName;
     private String email;
     private String dob;
 
-    public User(){
+    public User() {
         firstName = "";
         lastName = "";
         email = "";
         dob = null;
     }
 
-    public User (String firstName, String lastName, String email, String dob) {
+    public User(String firstName, String lastName, String email, String dob) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -25,7 +26,7 @@ public class User implements Serializable{
         return firstName;
     }
 
-    public void setFirstName(String firstName){
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -33,15 +34,15 @@ public class User implements Serializable{
         return lastName;
     }
 
-    public void setLastName(String lastName){
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email){
+    public void setEmail(String email) {
         this.email = email;
     }
 
